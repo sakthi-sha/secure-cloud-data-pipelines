@@ -1,0 +1,58 @@
+
+PROJECT: Secure a Cloud Data Pipeline with Access Control and Masking
+
+1. DATA AT REST SECURITY
+
+Data at rest means data stored in databases,
+cloud storage, or other storage systems.
+
+Security Measures:
+
+- Use AES-256 encryption to protect stored data.
+- Enable server-side encryption in cloud storage.
+- Use secure database access controls.
+- Apply IAM policies to allow only authorized users.
+- Store encryption keys securely using a cloud key management service.
+- Take regular secure backups.
+
+2. DATA IN TRANSIT SECURITY
+
+Data in transit means data moving between
+applications, databases, and cloud services.
+
+Security Measures:
+
+- Use HTTPS for secure communication.
+- Implement TLS 1.2 or higher encryption.
+- Use secure API connections.
+- Avoid transmitting sensitive customer data
+  through unsecured networks.
+- Verify server certificates during communication.
+
+3. SQL INJECTION PREVENTION
+
+- Use parameterized SQL queries.
+- Avoid directly inserting user input into SQL statements.
+- Validate user inputs.
+- Use SQLite parameter placeholders (?) to execute safe queries.
+
+4. DATA MASKING
+
+- Mask customer names.
+- Hide email usernames.
+- Hide phone number digits.
+- Display only necessary customer information.
+- Protect Personally Identifiable Information (PII).
+
+5. ACCESS CONTROL
+
+- Follow the principle of least privilege.
+- Allow only authorized users to access sensitive data.
+- Use role-based access control (RBAC).
+- Restrict database permissions.
+
+6. CONCLUSION
+
+This project demonstrates secure SQL querying,
+customer data masking, and important cloud security
+principles for protecting sensitive customer information.
